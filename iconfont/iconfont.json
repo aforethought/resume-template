@@ -1,0 +1,128 @@
+{
+  "id": "3580699",
+  "name": "new-resume",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1189",
+      "name": "自助推广",
+      "font_class": "zizhutuiguang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "11968736",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "26267572",
+      "name": "gitee",
+      "font_class": "gitee",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "77156",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "568544",
+      "name": "基本信息",
+      "font_class": "jibenxinxi",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "609394",
+      "name": "蜡烛",
+      "font_class": "lazhucandle4",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "612527",
+      "name": "29_邮箱_fill",
+      "font_class": "29youxiangfill",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "657311",
+      "name": "分期－教育",
+      "font_class": "jiaoyu",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "3199590",
+      "name": "工作经历",
+      "font_class": "drxx20",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "3483789",
+      "name": "性别",
+      "font_class": "xingbie",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "5755492",
+      "name": "工具-fill",
+      "font_class": "gongju-fill",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "6251507",
+      "name": "icon_地区",
+      "font_class": "icon_diqu",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "7568878",
+      "name": "24gf-phoneLoudspeaker",
+      "font_class": "24gf-phoneLoudspeaker",
+      "unicode": "e969",
+      "unicode_decimal": 59753
+    },
+    {
+      "icon_id": "10268578",
+      "name": "签约记录",
+      "font_class": "qianyuejilu",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "16479810",
+      "name": "校园",
+      "font_class": "xiaoyuan",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "22526027",
+      "name": "岗位管理",
+      "font_class": "gangweiguanli",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "755615",
+      "name": "直角三角形",
+      "font_class": "zhijiao-triangle",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    }
+  ]
+}

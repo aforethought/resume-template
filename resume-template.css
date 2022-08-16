@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    /* font: 12pt "Tahoma"; */
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 0 1cm 1cm 1cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 顶部RESUME之后全部内容的盒子 */
+
+.subpage {
+    margin-top: 10px;
+    min-height: 25cm;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+p,
+.iconfont {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
+/* 设置logo原有的颜色 开始*/
+
+.icon-zizhutuiguang {
+    color: coral;
+}
+
+.icon-github {
+    color: black;
+}
+
+.icon-gitee {
+    color: #d90013;
+}
+
+.icon-weixin {
+    color: #1ed66e;
+}
+
+
+/* 设置logo原有的颜色 结束*/
+
+
+/* 最顶部RESUME区域的大盒子(包含了.top和.bottom) */
+
+.header-box {
+    position: relative;
+}
+
+
+/* 最顶部的圆角边框 */
+
+.top {
+    height: 40px;
+    border: 1px solid #44546b;
+    margin: 0 -1cm;
+    background-color: #44546b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* 最顶部装了RESUME的梯形的盒子 */
+
+.bottom {
+    /* overflow: hidden; */
+    /* width: 100%; */
+    width: fit-content;
+    height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+
+/* 头部装了RESUME的梯形 */
+
+.trapezod {
+    width: 240px;
+    height: 150px;
+    font-size: 16px;
+    border: 1px solid #44546b;
+    background-color: #44546b;
+    float: left;
+    -webkit-clip-path: polygon(0 0, 100% 0, 78% 29%, 22% 29%);
+    clip-path: polygon(0 0, 100% 0, 78% 29%, 22% 29%);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+
+/* 文本RESUME */
+
+.resume {
+    font-size: 32px;
+    color: #FAFAFA;
+}
+
+
+/* 姓名、头像基本部分的大盒子*/
+
+.basic {
+    margin: 0 auto;
+    width: 700px;
+    height: 160px;
+    /* position: absolute; */
+    position: relative;
+    margin-top: 30px;
+}
+
+
+/* 左边的盒子--文字部分 */
+
+.basic-l {
+    width: 580px;
+    height: 160px;
+    float: left;
+    position: relative;
+}
+
+
+/* 右边的盒子--照片部分 */
+
+.basic-r {
+    width: 120px;
+    height: 160px;
+    padding-top: 20px;
+    float: right;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* 姓名文本 */
+
+h2 {
+    margin: 20px 0 5px 0;
+}
+
+
+/* 一寸照片 */
+
+.photo {
+    width: 2.5cm;
+    height: 3.5cm;
+    border: 3px dashed palegoldenrod;
+    border-radius: 2px;
+    position: relative;
+}
+
+
+/* 方框里的“十” */
+
+.across {
+    width: 25px;
+    height: 5px;
+    border-top: 1px dotted palegoldenrod;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.stand {
+    width: 1px;
+    height: 25px;
+    border-right: 1px dotted palegoldenrod;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+/* 名字下方的内容 */
+
+
+/* 包含着每一项的大盒子 */
+
+.basic-l-items-box {
+    width: 500px;
+    height: 100px;
+    font-size: 12px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* 每条项目垂直居中 */
+
+.basic-l-item {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 让小图标在给它div的盒子里水平垂直居中 */
+
+.basic-l-item .iconfont {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.onesentence {
+    font-weight: bold;
+}
+
+
+/* 主要内容部分 */
+
+
+/* 主要内容公共部分开始 */
+
+.main-content {
+    /* position: absolute; */
+    position: relative;
+    /*这个很重要，若去掉，上方名字部分的内容高度一改变下面的图标就会乱*/
+}
+
+.main-content .item1-bottom p {
+    font-size: 14px;
+}
+
+
+/* 梯形和线的父盒子 */
+
+.item {
+    /* 注意要记得给父盒子限定宽度*/
+    width: 710px;
+}
+
+.item-top {
+    /* 注意要给父盒子足够宽度，防止页面缩小后 不能给子盒子足够宽度 造成掉盒子，之前是没有给.item它宽度，给了就可以不用了 */
+    /* width: 710px; */
+    height: 30px;
+    /* margin-top: 10px; */
+    margin: 5px 0 5px 0;
+}
+
+
+/* 左边的梯形 */
+
+.item-trapezod {
+    width: 170px;
+    height: 30px;
+    border: 1px solid #44546b;
+    background-color: #44546b;
+    -webkit-clip-path: polygon(0 1%, 61% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 1%, 85% 0, 100% 100%, 0% 100%);
+    margin: 0 auto;
+}
+
+
+/* 每一个栏目的左边 */
+
+.item-top-left {
+    width: 170px;
+    height: 30px;
+    float: left;
+    /* margin-top: -4px; */
+}
+
+
+/* 左边的梯形里的小图标 */
+
+.item-top .iconfont {
+    color: white;
+    margin: 5px;
+}
+
+.item-topic {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* 每一个栏目的右边 */
+
+.item-top-right {
+    width: 540px;
+    height: 6px;
+    border-bottom: 1px solid #44546b;
+    background-color: #44546b;
+    -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 1% 100%);
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 1% 100%);
+    float: left;
+    position: relative;
+    margin-top: 24px;
+}
+
+
+/* 主要内容公共部分结束 */
+
+
+/* 详细内容部分--【基本信息】栏目的底部 开始*/
+
+.items-bottom {
+    width: 700px;
+    height: 70px;
+    margin-top: 10px;
+    /* 当items-bottom盒子的高度改变时 items-bottom盒子里的内容能保持水平垂直居中 */
+    /* 一开始这里想着用flex，就是这个底部都用flex，但应该还得再给个盒子 偏麻烦*/
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.items-bottom .iconfont {
+    color: #44546b;
+}
+
+.per-item-box {
+    width: 220px;
+    height: 24px;
+    float: left;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+.items-bottom .iconfont {
+    margin: 0px 5px 0px 10px;
+}
+
+.per-item-box-job {
+    width: 500px;
+    height: 24px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* 详细内容部分--【基本信息】栏目的底部 结束*/
+
+
+/* 详细内容部分--【其余】栏目的底部 开始（除了第一个，剩下的样式都类似）*/
+
+.item-bottom {
+    margin-top: 5px;
+}
+
+
+/* 因为【基本信息】栏目的底部内容比较特殊，需要布局，所以就类名为.items-bottom */
+
+.items-bottom p,
+.item-bottom p {
+    font-size: 14px;
+}
+
+.item-bottom {
+    text-align: center;
+}
+
+
+/* 空白区域的虚框 */
+
+.item-bottom .less {
+    width: 680px;
+    height: 90px;
+    border: 1px dashed #44546b;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+}
+
+.item-bottom .more {
+    width: 680px;
+    height: 180px;
+    border: 1px dashed #44546b;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+}
